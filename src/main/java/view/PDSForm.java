@@ -42,8 +42,8 @@ public class PDSForm extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         mainPanel = new javax.swing.JPanel();
-        personalInfoPanel2 = new view.PersonalInfoPanel();
         jPanel3 = new javax.swing.JPanel();
+        familyBackgroundPanel1 = new view.FamilyBackgroundPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -76,34 +76,46 @@ public class PDSForm extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        personalInfoPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        mainPanel.setBackground(new java.awt.Color(243, 244, 246));
 
         javax.swing.GroupLayout mainPanelLayout = new javax.swing.GroupLayout(mainPanel);
         mainPanel.setLayout(mainPanelLayout);
         mainPanelLayout.setHorizontalGroup(
             mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(mainPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(personalInfoPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 1109, Short.MAX_VALUE))
+            .addGap(0, 1115, Short.MAX_VALUE)
         );
         mainPanelLayout.setVerticalGroup(
             mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(mainPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(personalInfoPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 786, Short.MAX_VALUE))
+            .addGap(0, 792, Short.MAX_VALUE)
         );
 
         jTabbedPane1.addTab("Personal Information", mainPanel);
+
+        javax.swing.GroupLayout familyBackgroundPanel1Layout = new javax.swing.GroupLayout(familyBackgroundPanel1);
+        familyBackgroundPanel1.setLayout(familyBackgroundPanel1Layout);
+        familyBackgroundPanel1Layout.setHorizontalGroup(
+            familyBackgroundPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1103, Short.MAX_VALUE)
+        );
+        familyBackgroundPanel1Layout.setVerticalGroup(
+            familyBackgroundPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 786, Short.MAX_VALUE)
+        );
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1115, Short.MAX_VALUE)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(familyBackgroundPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 792, Short.MAX_VALUE)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addComponent(familyBackgroundPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         jTabbedPane1.addTab("Family Background", jPanel3);
@@ -175,6 +187,7 @@ public class PDSForm extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private view.FamilyBackgroundPanel familyBackgroundPanel1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -183,6 +196,5 @@ public class PDSForm extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JPanel mainPanel;
-    private view.PersonalInfoPanel personalInfoPanel2;
     // End of variables declaration//GEN-END:variables
 }
