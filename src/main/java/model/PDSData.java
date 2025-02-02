@@ -68,10 +68,14 @@ public class PDSData {
     // III. Educational Background
     private List<Education> educationList;
 
+    // IV. Civil Service Eligibility
+    private List<Eligibility> eligibilityList;
+
     // Constructor
     public PDSData() {
         educationList = new ArrayList<>();
         children = new ArrayList<>();
+        eligibilityList = new ArrayList<>();
     }
 
     public String getSurname() {
@@ -521,6 +525,13 @@ public class PDSData {
     public void setEducationList(List<Education> educationList) {
         this.educationList = educationList;
     }
-    
-    
+
+    public List<Eligibility> getEligibilityList() {
+        return eligibilityList;
+    }
+
+    public void setEligibilityList(List<Eligibility> eligibilityList) {
+        this.eligibilityList = eligibilityList;
+    }
+
 }
