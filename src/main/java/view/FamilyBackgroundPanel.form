@@ -24,129 +24,156 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+          <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jSeparator4" alignment="0" min="-2" pref="938" max="-2" attributes="0"/>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="9" pref="9" max="-2" attributes="0"/>
-                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                  </Group>
                   <Group type="102" attributes="0">
-                      <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="surnameLabel3" min="-2" pref="211" max="-2" attributes="0"/>
-                              <EmptySpace min="38" pref="38" max="-2" attributes="0"/>
-                              <Component id="firstNameLabel3" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="180" pref="180" max="-2" attributes="0"/>
-                              <Component id="middleNameLabel3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="motherSurnameTextField" min="-2" pref="228" max="-2" attributes="0"/>
-                              <EmptySpace min="21" pref="21" max="-2" attributes="0"/>
-                              <Component id="motherFirstNameTextField" min="-2" pref="228" max="-2" attributes="0"/>
-                              <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
-                              <Component id="motherMiddleNameTextField" min="-2" pref="228" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                  </Group>
-                  <Component id="jSeparator3" alignment="0" min="-2" pref="938" max="-2" attributes="0"/>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="9" pref="9" max="-2" attributes="0"/>
-                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="surnameLabel2" min="-2" pref="211" max="-2" attributes="0"/>
-                              <EmptySpace min="38" pref="38" max="-2" attributes="0"/>
-                              <Component id="firstNameLabel2" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="180" pref="180" max="-2" attributes="0"/>
-                              <Component id="middleNameLabel2" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="fatherSurnameTextField" min="-2" pref="228" max="-2" attributes="0"/>
-                              <EmptySpace min="21" pref="21" max="-2" attributes="0"/>
-                              <Component id="fatherFirstNameTextField" min="-2" pref="228" max="-2" attributes="0"/>
-                              <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
-                              <Component id="fatherMiddleNameTextField" min="-2" pref="228" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="nameExtensionLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="fatherExtTextField" alignment="0" min="-2" pref="54" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <Component id="jSeparator2" min="-2" pref="938" max="-2" attributes="0"/>
-                  <Component id="informationLabel" min="-2" max="-2" attributes="0"/>
-                  <Component id="jSeparator1" alignment="0" min="-2" pref="938" max="-2" attributes="0"/>
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="9" pref="9" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Group type="102" alignment="0" attributes="0">
+                          <Component id="jSeparator4" alignment="0" min="-2" pref="938" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="surnameLabel" min="-2" pref="211" max="-2" attributes="0"/>
+                                      <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="surnameLabel3" alignment="0" min="-2" pref="211" max="-2" attributes="0"/>
+                                          <Component id="motherSurnameTextField" alignment="0" min="-2" pref="228" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jSeparator3" alignment="0" min="-2" pref="938" max="-2" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="firstNameLabel3" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace min="180" pref="180" max="-2" attributes="0"/>
+                                                      <Component id="middleNameLabel3" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="motherFirstNameTextField" min="-2" pref="228" max="-2" attributes="0"/>
+                                                      <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                                                      <Component id="motherMiddleNameTextField" min="-2" pref="228" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="surnameLabel2" min="-2" pref="211" max="-2" attributes="0"/>
                                       <EmptySpace min="38" pref="38" max="-2" attributes="0"/>
-                                      <Component id="firstNameLabel" min="-2" max="-2" attributes="0"/>
+                                      <Component id="firstNameLabel2" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="180" pref="180" max="-2" attributes="0"/>
-                                      <Component id="middleNameLabel" min="-2" max="-2" attributes="0"/>
+                                      <Component id="middleNameLabel2" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="spouseSurnameTextField" min="-2" pref="228" max="-2" attributes="0"/>
+                                      <Component id="fatherSurnameTextField" min="-2" pref="228" max="-2" attributes="0"/>
                                       <EmptySpace min="21" pref="21" max="-2" attributes="0"/>
-                                      <Component id="spouseFirstNameTextField" min="-2" pref="228" max="-2" attributes="0"/>
+                                      <Component id="fatherFirstNameTextField" min="-2" pref="228" max="-2" attributes="0"/>
                                       <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
-                                      <Component id="spouseMiddleNameTextField" min="-2" pref="228" max="-2" attributes="0"/>
+                                      <Component id="fatherMiddleNameTextField" min="-2" pref="228" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="nameExtensionLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="spouseExtTextField" alignment="0" min="-2" pref="54" max="-2" attributes="0"/>
+                                  <Component id="nameExtensionLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="fatherExtTextField" alignment="0" min="-2" pref="54" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
+                          <Component id="jSeparator2" min="-2" pref="938" max="-2" attributes="0"/>
+                          <Component id="informationLabel" min="-2" max="-2" attributes="0"/>
+                          <Component id="jSeparator1" alignment="0" min="-2" pref="938" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="9" pref="9" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="spouseOccupationTextField" min="-2" pref="228" max="-2" attributes="0"/>
-                                      <EmptySpace min="21" pref="21" max="-2" attributes="0"/>
-                                      <Component id="spouseEmployerTextField" min="-2" pref="228" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="surnameLabel" min="-2" pref="211" max="-2" attributes="0"/>
+                                              <EmptySpace min="38" pref="38" max="-2" attributes="0"/>
+                                              <Component id="firstNameLabel" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="180" pref="180" max="-2" attributes="0"/>
+                                              <Component id="middleNameLabel" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="spouseSurnameTextField" min="-2" pref="228" max="-2" attributes="0"/>
+                                              <EmptySpace min="21" pref="21" max="-2" attributes="0"/>
+                                              <Component id="spouseFirstNameTextField" min="-2" pref="228" max="-2" attributes="0"/>
+                                              <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                                              <Component id="spouseMiddleNameTextField" min="-2" pref="228" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="nameExtensionLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="spouseExtTextField" alignment="0" min="-2" pref="54" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="surnameLabel1" min="-2" pref="211" max="-2" attributes="0"/>
-                                      <EmptySpace min="38" pref="38" max="-2" attributes="0"/>
-                                      <Component id="firstNameLabel1" min="-2" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="spouseOccupationTextField" min="-2" pref="228" max="-2" attributes="0"/>
+                                              <EmptySpace min="21" pref="21" max="-2" attributes="0"/>
+                                              <Component id="spouseEmployerTextField" min="-2" pref="228" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="surnameLabel1" min="-2" pref="211" max="-2" attributes="0"/>
+                                              <EmptySpace min="38" pref="38" max="-2" attributes="0"/>
+                                              <Component id="firstNameLabel1" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="middleNameLabel1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="bussAddressTextField" min="-2" pref="228" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="nameExtensionLabel1" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="0" pref="120" max="32767" attributes="0"/>
+                                          </Group>
+                                          <Component id="spouseTeleTextField" max="32767" attributes="0"/>
+                                      </Group>
                                   </Group>
-                              </Group>
-                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="middleNameLabel1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="bussAddressTextField" min="-2" pref="228" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Component id="nameExtensionLabel1" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="0" pref="120" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Component id="spouseTeleTextField" max="32767" attributes="0"/>
                               </Group>
                           </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="190" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="addChildButton" min="-2" pref="141" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
+                              <Component id="editChildButton" min="-2" pref="141" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="93" max="-2" attributes="0"/>
+                              <Component id="deleteChildButton" min="-2" pref="141" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jScrollPane1" min="-2" pref="627" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace pref="23" max="32767" attributes="0"/>
+              <EmptySpace pref="234" max="32767" attributes="0"/>
           </Group>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                   <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="806" max="32767" attributes="0"/>
+                  <EmptySpace pref="1243" max="32767" attributes="0"/>
               </Group>
           </Group>
       </Group>
@@ -206,25 +233,41 @@
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="jSeparator3" min="-2" pref="10" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="surnameLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="firstNameLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="middleNameLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="surnameLabel3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                      <Component id="motherSurnameTextField" min="-2" pref="30" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jSeparator3" alignment="0" min="-2" pref="10" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="firstNameLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="middleNameLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="motherFirstNameTextField" alignment="0" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="motherMiddleNameTextField" alignment="0" min="-2" pref="30" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
               </Group>
-              <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="motherSurnameTextField" alignment="0" min="-2" pref="30" max="-2" attributes="0"/>
-                  <Component id="motherFirstNameTextField" alignment="0" min="-2" pref="30" max="-2" attributes="0"/>
-                  <Component id="motherMiddleNameTextField" alignment="0" min="-2" pref="30" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
               <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jSeparator4" min="-2" pref="10" max="-2" attributes="0"/>
-              <EmptySpace pref="535" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="deleteChildButton" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
+                  <Component id="editChildButton" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
+                  <Component id="addChildButton" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="13" max="32767" attributes="0"/>
           </Group>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
@@ -584,6 +627,51 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JSeparator" name="jSeparator4">
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTable" name="childrenTable">
+          <Properties>
+            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+              <Table columnCount="4" rowCount="4">
+                <Column editable="true" title="Title 1" type="java.lang.Object"/>
+                <Column editable="true" title="Title 2" type="java.lang.Object"/>
+                <Column editable="true" title="Title 3" type="java.lang.Object"/>
+                <Column editable="true" title="Title 4" type="java.lang.Object"/>
+              </Table>
+            </Property>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="deleteChildButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Delete Child"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="deleteChildButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="addChildButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Add Child"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addChildButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="editChildButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Edit Child"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="editChildButtonActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

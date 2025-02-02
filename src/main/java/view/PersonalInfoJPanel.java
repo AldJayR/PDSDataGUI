@@ -9,10 +9,6 @@ import javax.swing.JOptionPane;
 import model.CivilStatus;
 import model.Sex;
 
-/**
- *
- * @author ASUS
- */
 public class PersonalInfoJPanel extends javax.swing.JPanel {
 
     /**
