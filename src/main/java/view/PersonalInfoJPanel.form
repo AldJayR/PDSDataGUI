@@ -439,7 +439,7 @@
               <Component id="jSeparator4" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="17" pref="17" max="-2" attributes="0"/>
               <Component id="surnameLabel5" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="surnameLabel4" min="-2" max="-2" attributes="0"/>
                   <Component id="surnameLabel6" min="-2" max="-2" attributes="0"/>
@@ -509,7 +509,7 @@
                   <Component id="mobileNoTextField" min="-2" pref="30" max="-2" attributes="0"/>
                   <Component id="emailAddressTextField" min="-2" pref="30" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="23" max="32767" attributes="0"/>
+              <EmptySpace pref="20" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>

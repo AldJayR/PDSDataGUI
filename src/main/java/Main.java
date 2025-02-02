@@ -17,6 +17,7 @@ public class Main {
             // PDSController controller = new PDSController(model, view);
 
             // view.setController(controller);
+            view.setTitle("CSC Personal Data Form");
             view.setVisible(true);
         });
     }
