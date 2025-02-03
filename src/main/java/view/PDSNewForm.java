@@ -46,6 +46,8 @@ public class PDSNewForm extends javax.swing.JFrame {
         educationPanel1 = new view.EducationPanel();
         jPanel4 = new javax.swing.JPanel();
         eligibilityPanel1 = new view.EligibilityPanel();
+        jPanel5 = new javax.swing.JPanel();
+        workExperiencePanel1 = new view.WorkExperiencePanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -156,6 +158,25 @@ public class PDSNewForm extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Eligibility", jPanel4);
 
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(workExperiencePanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(1359, Short.MAX_VALUE))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(workExperiencePanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(2871, Short.MAX_VALUE))
+        );
+
+        jTabbedPane1.addTab("Work Experience", jPanel5);
+
         jScrollPane1.setViewportView(jTabbedPane1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -222,8 +243,10 @@ public class PDSNewForm extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private view.PersonalInfoJPanel personalInfoJPanel1;
+    private view.WorkExperiencePanel workExperiencePanel1;
     // End of variables declaration//GEN-END:variables
 }

@@ -246,7 +246,7 @@ public class EligibilityPanel extends javax.swing.JPanel {
                     .addComponent(editEligibilityBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(deleteEligibilityBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(addEligibilityBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(1127, Short.MAX_VALUE))
+                .addContainerGap(621, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

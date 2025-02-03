@@ -71,11 +71,15 @@ public class PDSData {
     // IV. Civil Service Eligibility
     private List<Eligibility> eligibilityList;
 
+    // V. Work Experience
+    private List<WorkExperience> workExperienceList;
+
     // Constructor
     public PDSData() {
         educationList = new ArrayList<>();
         children = new ArrayList<>();
         eligibilityList = new ArrayList<>();
+        workExperienceList = new ArrayList<>();
     }
 
     public String getSurname() {
@@ -534,4 +538,11 @@ public class PDSData {
         this.eligibilityList = eligibilityList;
     }
 
+    public List<WorkExperience> getWorkExperienceList() {
+        return workExperienceList;
+    }
+
+    public void setWorkExperienceList(List<WorkExperience> workExperienceList) {
+        this.workExperienceList = workExperienceList;
+    }
 }

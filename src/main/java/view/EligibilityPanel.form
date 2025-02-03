@@ -62,7 +62,7 @@
                   <Component id="deleteEligibilityBtn" alignment="3" min="-2" pref="51" max="-2" attributes="0"/>
                   <Component id="addEligibilityBtn" alignment="3" min="-2" pref="51" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="1127" max="32767" attributes="0"/>
+              <EmptySpace pref="621" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
