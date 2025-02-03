@@ -121,12 +121,12 @@
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="4613" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="5013" max="32767" attributes="0"/>
                       <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="personalInfoJPanel1" min="-2" pref="1115" max="-2" attributes="0"/>
-                              <EmptySpace pref="3492" max="32767" attributes="0"/>
+                              <EmptySpace pref="3892" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -161,7 +161,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="familyBackgroundPanel1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="3524" max="32767" attributes="0"/>
+                          <EmptySpace pref="3924" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -195,7 +195,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="educationPanel1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="3524" max="32767" attributes="0"/>
+                          <EmptySpace pref="3924" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -229,7 +229,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="eligibilityPanel1" min="-2" pref="800" max="-2" attributes="0"/>
-                          <EmptySpace pref="3807" max="32767" attributes="0"/>
+                          <EmptySpace pref="4207" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -263,7 +263,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="workExperiencePanel1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="3307" max="32767" attributes="0"/>
+                          <EmptySpace pref="3707" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -297,13 +297,47 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="voluntaryWorkPanel1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="3307" max="32767" attributes="0"/>
+                          <EmptySpace pref="3707" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
                 <Component class="view.VoluntaryWorkPanel" name="voluntaryWorkPanel1">
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="jPanel7">
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                  <JTabbedPaneConstraints tabName="L&amp;D/Training">
+                    <Property name="tabTitle" type="java.lang.String" value="L&amp;D/Training"/>
+                  </JTabbedPaneConstraints>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                          <Component id="trainingPanel1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="1657" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="trainingPanel1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="3707" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="view.TrainingPanel" name="trainingPanel1">
                 </Component>
               </SubComponents>
             </Container>

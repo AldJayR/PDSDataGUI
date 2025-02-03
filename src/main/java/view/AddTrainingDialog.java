@@ -1,6 +1,6 @@
 package view;
 
-import model.VoluntaryWork;
+import model.Training;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
@@ -10,49 +10,49 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.util.Date;
 
-public class AddVoluntaryWorkDialog extends BaseDialog {
+public class AddTrainingDialog extends BaseDialog {
 
     private final DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
 
-    private JTextField organizationNameField;
-    private JTextField organizationAddressField;
+    private JTextField titleField;
     private JFormattedTextField dateFromField;
     private JFormattedTextField dateToField;
     private JTextField numberOfHoursField;
-    private JTextField positionNatureOfWorkField;
+    private JTextField typeOfLdField;
+    private JTextField conductedByField;
     private JButton okButton;
     private JButton cancelButton;
-    private VoluntaryWork voluntaryWork;
+    private Training training;
 
-    // Constructors
-    public AddVoluntaryWorkDialog(Frame parent, boolean modal) {
+    // Two constructors: one for adding, one for editing an existing training
+    public AddTrainingDialog(Frame parent, boolean modal) {
         this(parent, modal, null);
     }
 
-    public AddVoluntaryWorkDialog(Frame parent, boolean modal, VoluntaryWork voluntaryWorkToEdit) {
+    public AddTrainingDialog(Frame parent, boolean modal, Training trainingToEdit) {
         super(parent, modal);
-        this.voluntaryWork = voluntaryWorkToEdit;
+        this.training = trainingToEdit;
         initializeComponents();
-        if (voluntaryWorkToEdit != null) {
+        if (trainingToEdit != null) {
             populateFields();
-            setTitle("Edit Voluntary Work");
+            setTitle("Edit Training");
         } else {
-            setTitle("Add Voluntary Work");
+            setTitle("Add Training");
         }
     }
 
     private void initializeComponents() {
-        // Create a main panel with a border layout and add padding
+        // Main panel with BorderLayout and padding
         JPanel mainPanel = new JPanel(new BorderLayout(0, 20));
         mainPanel.setBackground(BACKGROUND_COLOR);
         mainPanel.setBorder(new EmptyBorder(24, 24, 24, 24));
 
-        // Header
+        // Header label
         JLabel headerLabel = createLabel(getTitle());
         headerLabel.setFont(TITLE_FONT);
         mainPanel.add(headerLabel, BorderLayout.NORTH);
 
-        // Form panel using GridBagLayout for flexible layout
+        // Form panel using GridBagLayout
         JPanel formPanel = new JPanel(new GridBagLayout());
         formPanel.setBackground(BACKGROUND_COLOR);
         GridBagConstraints gbc = new GridBagConstraints();
@@ -61,27 +61,38 @@ public class AddVoluntaryWorkDialog extends BaseDialog {
         gbc.weightx = 1.0;
         int gridY = 0;
 
-        // Organization Name
-        addFormField(formPanel, "Name of Organization:", organizationNameField = createTextField(), gbc, gridY++);
-        // Organization Address
-        addFormField(formPanel, "Address of Organization:", organizationAddressField = createTextField(), gbc, gridY++);
-        // Date From
-        addFormField(formPanel, "Date From (MM/dd/yyyy):", dateFromField = createDateField(), gbc, gridY++);
-        // Date To
-        addFormField(formPanel, "Date To (MM/dd/yyyy):", dateToField = createDateField(), gbc, gridY++);
-        // Number of Hours
-        addFormField(formPanel, "Number of Hours:", numberOfHoursField = createTextField(), gbc, gridY++);
-        // Position/Nature of Work
-        addFormField(formPanel, "Position/Nature of Work:", positionNatureOfWorkField = createTextField(), gbc, gridY++);
+        // Title of Learning and Development
+        addFormField(formPanel, "Title of Learning and Development:",
+                titleField = createTextField(), gbc, gridY++);
 
-        // Add the form panel to a scroll pane in case there is a lot of content
+        // Date From
+        addFormField(formPanel, "Date From (MM/dd/yyyy):",
+                dateFromField = createDateField(), gbc, gridY++);
+
+        // Date To
+        addFormField(formPanel, "Date To (MM/dd/yyyy):",
+                dateToField = createDateField(), gbc, gridY++);
+
+        // Number of Hours
+        addFormField(formPanel, "Number of Hours:",
+                numberOfHoursField = createTextField(), gbc, gridY++);
+
+        // Type of LD
+        addFormField(formPanel, "Type of LD:",
+                typeOfLdField = createTextField(), gbc, gridY++);
+
+        // Conducted/Sponsored By
+        addFormField(formPanel, "Conducted/Sponsored By:",
+                conductedByField = createTextField(), gbc, gridY++);
+
+        // Add the form panel to a scroll pane
         JScrollPane scrollPane = new JScrollPane(formPanel);
         scrollPane.setBorder(null);
         scrollPane.setBackground(BACKGROUND_COLOR);
         scrollPane.getViewport().setBackground(BACKGROUND_COLOR);
         mainPanel.add(scrollPane, BorderLayout.CENTER);
 
-        // Buttons panel
+        // Buttons panel at the bottom
         JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT, 12, 0));
         buttonPanel.setBackground(BACKGROUND_COLOR);
         okButton = createPrimaryButton("OK");
@@ -99,6 +110,7 @@ public class AddVoluntaryWorkDialog extends BaseDialog {
         setLocationRelativeTo(getParent());
     }
 
+    // Helper method to add a label and its corresponding field using GridBagLayout
     private void addFormField(JPanel panel, String labelText, JComponent field,
             GridBagConstraints gbc, int gridy) {
         JLabel label = createLabel(labelText);
@@ -116,20 +128,15 @@ public class AddVoluntaryWorkDialog extends BaseDialog {
             }
         });
         cancelButton.addActionListener(e -> {
-            voluntaryWork = null;
+            training = null;
             dispose();
         });
     }
 
     private boolean validateInput() {
-        if (organizationNameField.getText().trim().isEmpty()) {
-            showError("Please enter the Name of Organization.");
-            organizationNameField.requestFocus();
-            return false;
-        }
-        if (organizationAddressField.getText().trim().isEmpty()) {
-            showError("Please enter the Address of Organization.");
-            organizationAddressField.requestFocus();
+        if (titleField.getText().trim().isEmpty()) {
+            showError("Please enter the title.");
+            titleField.requestFocus();
             return false;
         }
         if (dateFromField.getText().trim().isEmpty() || parseDate(dateFromField.getText()) == null) {
@@ -149,6 +156,7 @@ public class AddVoluntaryWorkDialog extends BaseDialog {
             dateFromField.requestFocus();
             return false;
         }
+        // Additional validations can be added here
         return true;
     }
 
@@ -161,6 +169,7 @@ public class AddVoluntaryWorkDialog extends BaseDialog {
         }
     }
 
+    // If desired, you can move showError to BaseDialog so all dialogs share it.
     private void showError(String message) {
         JOptionPane.showMessageDialog(
                 this,
@@ -173,42 +182,42 @@ public class AddVoluntaryWorkDialog extends BaseDialog {
     // Implementation of the abstract method from BaseDialog.
     @Override
     protected void populateFields() {
-        if (voluntaryWork != null) {
-            organizationNameField.setText(voluntaryWork.getOrganizationName());
-            organizationAddressField.setText(voluntaryWork.getOrganizationAddress());
-            // Convert LocalDate to Date before setting the value.
-            if (voluntaryWork.getDateFrom() != null) {
-                dateFromField.setValue(Date.from(voluntaryWork.getDateFrom()
+        if (training != null) {
+            titleField.setText(training.getTitle());
+            // Convert LocalDate to Date before setting on JFormattedTextField.
+            if (training.getDateFrom() != null) {
+                dateFromField.setValue(Date.from(training.getDateFrom()
                         .atStartOfDay(ZoneId.systemDefault()).toInstant()));
             }
-            if (voluntaryWork.getDateTo() != null) {
-                dateToField.setValue(Date.from(voluntaryWork.getDateTo()
+            if (training.getDateTo() != null) {
+                dateToField.setValue(Date.from(training.getDateTo()
                         .atStartOfDay(ZoneId.systemDefault()).toInstant()));
             }
-            numberOfHoursField.setText(String.valueOf(voluntaryWork.getNumberOfHours()));
-            positionNatureOfWorkField.setText(voluntaryWork.getPositionNatureOfWork());
+            numberOfHoursField.setText(String.valueOf(training.getNumberOfHours()));
+            typeOfLdField.setText(training.getTypeOfLd());
+            conductedByField.setText(training.getConductedBy());
         }
     }
 
     // Implementation of the abstract method from BaseDialog.
     @Override
     protected void updateModelFromFields() {
-        if (voluntaryWork == null) {
-            voluntaryWork = new VoluntaryWork();
+        if (training == null) {
+            training = new Training();
         }
-        voluntaryWork.setOrganizationName(organizationNameField.getText().trim());
-        voluntaryWork.setOrganizationAddress(organizationAddressField.getText().trim());
-        voluntaryWork.setDateFrom(parseDate(dateFromField.getText()));
-        voluntaryWork.setDateTo(parseDate(dateToField.getText()));
+        training.setTitle(titleField.getText().trim());
+        training.setDateFrom(parseDate(dateFromField.getText()));
+        training.setDateTo(parseDate(dateToField.getText()));
         try {
-            voluntaryWork.setNumberOfHours(Integer.parseInt(numberOfHoursField.getText().trim()));
+            training.setNumberOfHours(Integer.parseInt(numberOfHoursField.getText().trim()));
         } catch (NumberFormatException ex) {
             showError("Invalid number format for Number of Hours.");
         }
-        voluntaryWork.setPositionNatureOfWork(positionNatureOfWorkField.getText().trim());
+        training.setTypeOfLd(typeOfLdField.getText().trim());
+        training.setConductedBy(conductedByField.getText().trim());
     }
 
-    public VoluntaryWork getVoluntaryWork() {
-        return voluntaryWork;
+    public Training getTraining() {
+        return training;
     }
 }

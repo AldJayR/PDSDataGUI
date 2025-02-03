@@ -50,6 +50,8 @@ public class PDSNewForm extends javax.swing.JFrame {
         workExperiencePanel1 = new view.WorkExperiencePanel();
         jPanel6 = new javax.swing.JPanel();
         voluntaryWorkPanel1 = new view.VoluntaryWorkPanel();
+        jPanel7 = new javax.swing.JPanel();
+        trainingPanel1 = new view.TrainingPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -93,12 +95,12 @@ public class PDSNewForm extends javax.swing.JFrame {
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 4613, Short.MAX_VALUE)
+            .addGap(0, 5013, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addContainerGap()
                     .addComponent(personalInfoJPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(3492, Short.MAX_VALUE)))
+                    .addContainerGap(3892, Short.MAX_VALUE)))
         );
 
         jTabbedPane1.addTab("Personal Info", jPanel1);
@@ -117,7 +119,7 @@ public class PDSNewForm extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(familyBackgroundPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(3524, Short.MAX_VALUE))
+                .addContainerGap(3924, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Family Background", jPanel2);
@@ -136,7 +138,7 @@ public class PDSNewForm extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(educationPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(3524, Short.MAX_VALUE))
+                .addContainerGap(3924, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Education", jPanel3);
@@ -155,7 +157,7 @@ public class PDSNewForm extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(eligibilityPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 800, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(3807, Short.MAX_VALUE))
+                .addContainerGap(4207, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Eligibility", jPanel4);
@@ -174,7 +176,7 @@ public class PDSNewForm extends javax.swing.JFrame {
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(workExperiencePanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(3307, Short.MAX_VALUE))
+                .addContainerGap(3707, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Work Experience", jPanel5);
@@ -193,10 +195,29 @@ public class PDSNewForm extends javax.swing.JFrame {
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(voluntaryWorkPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(3307, Short.MAX_VALUE))
+                .addContainerGap(3707, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Voluntary Work", jPanel6);
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(44, 44, 44)
+                .addComponent(trainingPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(1657, Short.MAX_VALUE))
+        );
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(trainingPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(3707, Short.MAX_VALUE))
+        );
+
+        jTabbedPane1.addTab("L&D/Training", jPanel7);
 
         jScrollPane1.setViewportView(jTabbedPane1);
 
@@ -266,9 +287,11 @@ public class PDSNewForm extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private view.PersonalInfoJPanel personalInfoJPanel1;
+    private view.TrainingPanel trainingPanel1;
     private view.VoluntaryWorkPanel voluntaryWorkPanel1;
     private view.WorkExperiencePanel workExperiencePanel1;
     // End of variables declaration//GEN-END:variables

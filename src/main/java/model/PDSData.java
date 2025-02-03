@@ -77,6 +77,9 @@ public class PDSData {
     // VI. Voluntary Work
     private List<VoluntaryWork> voluntaryWorkList;
 
+    // VII. Learning and Development
+    private List<Training> trainingList;
+
     // Constructor
     public PDSData() {
         educationList = new ArrayList<>();
@@ -84,6 +87,7 @@ public class PDSData {
         eligibilityList = new ArrayList<>();
         workExperienceList = new ArrayList<>();
         voluntaryWorkList = new ArrayList<>();
+        trainingList = new ArrayList<>();
     }
 
     public String getSurname() {
@@ -548,5 +552,13 @@ public class PDSData {
 
     public void setWorkExperienceList(List<WorkExperience> workExperienceList) {
         this.workExperienceList = workExperienceList;
+    }
+
+    public List<Training> getTrainingList() {
+        return trainingList;
+    }
+
+    public void setTrainingList(List<Training> trainingList) {
+        this.trainingList = trainingList;
     }
 }
