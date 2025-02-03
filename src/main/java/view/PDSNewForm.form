@@ -121,12 +121,12 @@
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="5458" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="5530" max="32767" attributes="0"/>
                       <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="personalInfoJPanel" min="-2" pref="1115" max="-2" attributes="0"/>
-                              <EmptySpace pref="4337" max="32767" attributes="0"/>
+                              <EmptySpace pref="4409" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -161,7 +161,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="familyBackgroundPanel" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="4369" max="32767" attributes="0"/>
+                          <EmptySpace pref="4441" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -195,7 +195,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="educationPanel" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="4369" max="32767" attributes="0"/>
+                          <EmptySpace pref="4441" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -229,7 +229,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="eligibilityPanel" min="-2" pref="800" max="-2" attributes="0"/>
-                          <EmptySpace pref="4652" max="32767" attributes="0"/>
+                          <EmptySpace pref="4724" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -263,7 +263,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="workExperiencePanel" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="4152" max="32767" attributes="0"/>
+                          <EmptySpace pref="4224" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -297,7 +297,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="voluntaryWorkPanel" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="4152" max="32767" attributes="0"/>
+                          <EmptySpace pref="4224" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -329,7 +329,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="trainingPanel" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="0" pref="4158" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="4230" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -363,7 +363,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="otherInfoPanel" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="4152" max="32767" attributes="0"/>
+                          <EmptySpace pref="4224" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -385,15 +385,27 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="3181" max="32767" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                          <Component id="summaryPanel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="1906" max="32767" attributes="0"/>
+                      </Group>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="5458" max="32767" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="summaryPanel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="4769" max="32767" attributes="0"/>
+                      </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
+              <SubComponents>
+                <Component class="view.SummaryPanel" name="summaryPanel">
+                </Component>
+              </SubComponents>
             </Container>
           </SubComponents>
         </Container>

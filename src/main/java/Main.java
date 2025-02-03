@@ -14,9 +14,9 @@ public class Main {
         SwingUtilities.invokeLater(() -> {
             PDSData model = new PDSData();
             PDSNewForm view = new PDSNewForm();
-            // PDSController controller = new PDSController(model, view);
+            PDSController controller = new PDSController(model, view);
 
-            // view.setController(controller);
+            view.setController(controller);
             view.setTitle("CSC Personal Data Form");
             view.setVisible(true);
         });
