@@ -79,6 +79,41 @@ public class PDSData {
 
     // VII. Learning and Development
     private List<Training> trainingList;
+    
+        // VIII. Other Information
+    private List<String> specialSkillsHobbies;
+    private List<String> nonAcademicDistinctionsRecognition;
+    private List<String> membershipInAssociationsOrganizations;
+    
+    // IX. Other Questions
+    private boolean thirdDegreeRelationship;
+    private boolean fourthDegreeRelationship;
+    private boolean adminOffense;
+    private String adminOffenseDetails;
+    private boolean criminallyCharged;
+    private LocalDate criminallyChargedDate;
+    private String criminallyChargedStatus;
+    private boolean convicted;
+    private String convictedDetails;
+    private boolean separatedService;
+    private String separatedServiceDetails;
+    private boolean electionCandidate;
+    private String electionCandidateDetails;
+    private boolean resignedGovt;
+    private String resignedGovtDetails;
+    private boolean immigrant;
+    private String immigrantCountry;
+    private boolean indigenous;
+    private String indigenousDetails;
+    private boolean pwd;
+    private String pwdDetails;
+    private boolean soloParent;
+    private String soloParentDetails;
+
+    // X. References
+    private List<Reference> references;
+
+    
 
     // Constructor
     public PDSData() {
@@ -561,4 +596,230 @@ public class PDSData {
     public void setTrainingList(List<Training> trainingList) {
         this.trainingList = trainingList;
     }
+
+    public List<VoluntaryWork> getVoluntaryWorkList() {
+        return voluntaryWorkList;
+    }
+
+    public void setVoluntaryWorkList(List<VoluntaryWork> voluntaryWorkList) {
+        this.voluntaryWorkList = voluntaryWorkList;
+    }
+
+    public List<String> getSpecialSkillsHobbies() {
+        return specialSkillsHobbies;
+    }
+
+    public void setSpecialSkillsHobbies(List<String> specialSkillsHobbies) {
+        this.specialSkillsHobbies = specialSkillsHobbies;
+    }
+
+    public List<String> getNonAcademicDistinctionsRecognition() {
+        return nonAcademicDistinctionsRecognition;
+    }
+
+    public void setNonAcademicDistinctionsRecognition(List<String> nonAcademicDistinctionsRecognition) {
+        this.nonAcademicDistinctionsRecognition = nonAcademicDistinctionsRecognition;
+    }
+
+    public List<String> getMembershipInAssociationsOrganizations() {
+        return membershipInAssociationsOrganizations;
+    }
+
+    public void setMembershipInAssociationsOrganizations(List<String> membershipInAssociationsOrganizations) {
+        this.membershipInAssociationsOrganizations = membershipInAssociationsOrganizations;
+    }
+
+    public boolean isThirdDegreeRelationship() {
+        return thirdDegreeRelationship;
+    }
+
+    public void setThirdDegreeRelationship(boolean thirdDegreeRelationship) {
+        this.thirdDegreeRelationship = thirdDegreeRelationship;
+    }
+
+    public boolean isFourthDegreeRelationship() {
+        return fourthDegreeRelationship;
+    }
+
+    public void setFourthDegreeRelationship(boolean fourthDegreeRelationship) {
+        this.fourthDegreeRelationship = fourthDegreeRelationship;
+    }
+
+    public boolean isAdminOffense() {
+        return adminOffense;
+    }
+
+    public void setAdminOffense(boolean adminOffense) {
+        this.adminOffense = adminOffense;
+    }
+
+    public String getAdminOffenseDetails() {
+        return adminOffenseDetails;
+    }
+
+    public void setAdminOffenseDetails(String adminOffenseDetails) {
+        this.adminOffenseDetails = adminOffenseDetails;
+    }
+
+    public boolean isCriminallyCharged() {
+        return criminallyCharged;
+    }
+
+    public void setCriminallyCharged(boolean criminallyCharged) {
+        this.criminallyCharged = criminallyCharged;
+    }
+
+    public LocalDate getCriminallyChargedDate() {
+        return criminallyChargedDate;
+    }
+
+    public void setCriminallyChargedDate(LocalDate criminallyChargedDate) {
+        this.criminallyChargedDate = criminallyChargedDate;
+    }
+
+    public String getCriminallyChargedStatus() {
+        return criminallyChargedStatus;
+    }
+
+    public void setCriminallyChargedStatus(String criminallyChargedStatus) {
+        this.criminallyChargedStatus = criminallyChargedStatus;
+    }
+
+    public boolean isConvicted() {
+        return convicted;
+    }
+
+    public void setConvicted(boolean convicted) {
+        this.convicted = convicted;
+    }
+
+    public String getConvictedDetails() {
+        return convictedDetails;
+    }
+
+    public void setConvictedDetails(String convictedDetails) {
+        this.convictedDetails = convictedDetails;
+    }
+
+    public boolean isSeparatedService() {
+        return separatedService;
+    }
+
+    public void setSeparatedService(boolean separatedService) {
+        this.separatedService = separatedService;
+    }
+
+    public String getSeparatedServiceDetails() {
+        return separatedServiceDetails;
+    }
+
+    public void setSeparatedServiceDetails(String separatedServiceDetails) {
+        this.separatedServiceDetails = separatedServiceDetails;
+    }
+
+    public boolean isElectionCandidate() {
+        return electionCandidate;
+    }
+
+    public void setElectionCandidate(boolean electionCandidate) {
+        this.electionCandidate = electionCandidate;
+    }
+
+    public String getElectionCandidateDetails() {
+        return electionCandidateDetails;
+    }
+
+    public void setElectionCandidateDetails(String electionCandidateDetails) {
+        this.electionCandidateDetails = electionCandidateDetails;
+    }
+
+    public boolean isResignedGovt() {
+        return resignedGovt;
+    }
+
+    public void setResignedGovt(boolean resignedGovt) {
+        this.resignedGovt = resignedGovt;
+    }
+
+    public String getResignedGovtDetails() {
+        return resignedGovtDetails;
+    }
+
+    public void setResignedGovtDetails(String resignedGovtDetails) {
+        this.resignedGovtDetails = resignedGovtDetails;
+    }
+
+    public boolean isImmigrant() {
+        return immigrant;
+    }
+
+    public void setImmigrant(boolean immigrant) {
+        this.immigrant = immigrant;
+    }
+
+    public String getImmigrantCountry() {
+        return immigrantCountry;
+    }
+
+    public void setImmigrantCountry(String immigrantCountry) {
+        this.immigrantCountry = immigrantCountry;
+    }
+
+    public boolean isIndigenous() {
+        return indigenous;
+    }
+
+    public void setIndigenous(boolean indigenous) {
+        this.indigenous = indigenous;
+    }
+
+    public String getIndigenousDetails() {
+        return indigenousDetails;
+    }
+
+    public void setIndigenousDetails(String indigenousDetails) {
+        this.indigenousDetails = indigenousDetails;
+    }
+
+    public boolean isPwd() {
+        return pwd;
+    }
+
+    public void setPwd(boolean pwd) {
+        this.pwd = pwd;
+    }
+
+    public String getPwdDetails() {
+        return pwdDetails;
+    }
+
+    public void setPwdDetails(String pwdDetails) {
+        this.pwdDetails = pwdDetails;
+    }
+
+    public boolean isSoloParent() {
+        return soloParent;
+    }
+
+    public void setSoloParent(boolean soloParent) {
+        this.soloParent = soloParent;
+    }
+
+    public String getSoloParentDetails() {
+        return soloParentDetails;
+    }
+
+    public void setSoloParentDetails(String soloParentDetails) {
+        this.soloParentDetails = soloParentDetails;
+    }
+
+    public List<Reference> getReferences() {
+        return references;
+    }
+
+    public void setReferences(List<Reference> references) {
+        this.references = references;
+    }
+    
+    
 }

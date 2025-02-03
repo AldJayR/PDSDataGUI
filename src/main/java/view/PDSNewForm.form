@@ -93,7 +93,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Container class="javax.swing.JTabbedPane" name="jTabbedPane1">
+        <Container class="javax.swing.JTabbedPane" name="mainTabbedPane">
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
           <SubComponents>
@@ -109,11 +109,11 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="2947" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="3181" max="32767" attributes="0"/>
                       <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="personalInfoJPanel1" pref="2935" max="32767" attributes="0"/>
+                              <Component id="personalInfoJPanel" pref="3169" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -121,19 +121,19 @@
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="5013" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="5458" max="32767" attributes="0"/>
                       <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="personalInfoJPanel1" min="-2" pref="1115" max="-2" attributes="0"/>
-                              <EmptySpace pref="3892" max="32767" attributes="0"/>
+                              <Component id="personalInfoJPanel" min="-2" pref="1115" max="-2" attributes="0"/>
+                              <EmptySpace pref="4337" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="view.PersonalInfoJPanel" name="personalInfoJPanel1">
+                <Component class="view.PersonalInfoJPanel" name="personalInfoJPanel">
                 </Component>
               </SubComponents>
             </Container>
@@ -151,8 +151,8 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="familyBackgroundPanel1" min="-2" pref="1110" max="-2" attributes="0"/>
-                          <EmptySpace pref="1831" max="32767" attributes="0"/>
+                          <Component id="familyBackgroundPanel" min="-2" pref="1110" max="-2" attributes="0"/>
+                          <EmptySpace pref="2065" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -160,14 +160,14 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="familyBackgroundPanel1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="3924" max="32767" attributes="0"/>
+                          <Component id="familyBackgroundPanel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="4369" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="view.FamilyBackgroundPanel" name="familyBackgroundPanel1">
+                <Component class="view.FamilyBackgroundPanel" name="familyBackgroundPanel">
                 </Component>
               </SubComponents>
             </Container>
@@ -185,8 +185,8 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="educationPanel1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="1035" max="32767" attributes="0"/>
+                          <Component id="educationPanel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="1269" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -194,14 +194,14 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="educationPanel1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="3924" max="32767" attributes="0"/>
+                          <Component id="educationPanel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="4369" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="view.EducationPanel" name="educationPanel1">
+                <Component class="view.EducationPanel" name="educationPanel">
                 </Component>
               </SubComponents>
             </Container>
@@ -219,8 +219,8 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="eligibilityPanel1" min="-2" pref="1169" max="-2" attributes="0"/>
-                          <EmptySpace pref="1772" max="32767" attributes="0"/>
+                          <Component id="eligibilityPanel" min="-2" pref="1169" max="-2" attributes="0"/>
+                          <EmptySpace pref="2006" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -228,14 +228,14 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="eligibilityPanel1" min="-2" pref="800" max="-2" attributes="0"/>
-                          <EmptySpace pref="4207" max="32767" attributes="0"/>
+                          <Component id="eligibilityPanel" min="-2" pref="800" max="-2" attributes="0"/>
+                          <EmptySpace pref="4652" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="view.EligibilityPanel" name="eligibilityPanel1">
+                <Component class="view.EligibilityPanel" name="eligibilityPanel">
                 </Component>
               </SubComponents>
             </Container>
@@ -253,8 +253,8 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="workExperiencePanel1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="1695" max="32767" attributes="0"/>
+                          <Component id="workExperiencePanel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="1929" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -262,14 +262,14 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="workExperiencePanel1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="3707" max="32767" attributes="0"/>
+                          <Component id="workExperiencePanel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="4152" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="view.WorkExperiencePanel" name="workExperiencePanel1">
+                <Component class="view.WorkExperiencePanel" name="workExperiencePanel">
                 </Component>
               </SubComponents>
             </Container>
@@ -287,8 +287,8 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="voluntaryWorkPanel1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="1695" max="32767" attributes="0"/>
+                          <Component id="voluntaryWorkPanel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="1929" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -296,14 +296,14 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="voluntaryWorkPanel1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="3707" max="32767" attributes="0"/>
+                          <Component id="voluntaryWorkPanel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="4152" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="view.VoluntaryWorkPanel" name="voluntaryWorkPanel1">
+                <Component class="view.VoluntaryWorkPanel" name="voluntaryWorkPanel">
                 </Component>
               </SubComponents>
             </Container>
@@ -320,9 +320,41 @@
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
-                          <Component id="trainingPanel1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="1657" max="32767" attributes="0"/>
+                          <Component id="trainingPanel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="1935" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="trainingPanel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="4158" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="view.TrainingPanel" name="trainingPanel">
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="jPanel8">
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                  <JTabbedPaneConstraints tabName="Other Info">
+                    <Property name="tabTitle" type="java.lang.String" value="Other Info"/>
+                  </JTabbedPaneConstraints>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="otherInfoPanel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="1643" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -330,16 +362,38 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="trainingPanel1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="3707" max="32767" attributes="0"/>
+                          <Component id="otherInfoPanel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="4152" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="view.TrainingPanel" name="trainingPanel1">
+                <Component class="view.OtherInfoPanel" name="otherInfoPanel">
                 </Component>
               </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="jPanel9">
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                  <JTabbedPaneConstraints tabName="Summary">
+                    <Property name="tabTitle" type="java.lang.String" value="Summary"/>
+                  </JTabbedPaneConstraints>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace min="0" pref="3181" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace min="0" pref="5458" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
             </Container>
           </SubComponents>
         </Container>
