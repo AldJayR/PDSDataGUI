@@ -3,9 +3,6 @@
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
-    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-      <Dimension value="[1127, 895]"/>
-    </Property>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -26,7 +23,7 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="headerPanel" pref="1127" max="32767" attributes="0"/>
+          <Component id="headerPanel" pref="1186" max="32767" attributes="0"/>
           <Component id="jScrollPane1" alignment="0" pref="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
@@ -35,7 +32,7 @@
           <Group type="102" attributes="0">
               <Component id="headerPanel" min="-2" pref="52" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jScrollPane1" pref="825" max="32767" attributes="0"/>
+              <Component id="jScrollPane1" pref="736" max="32767" attributes="0"/>
               <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -58,7 +55,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="110" max="-2" attributes="0"/>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="792" max="32767" attributes="0"/>
+                  <EmptySpace pref="851" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -112,11 +109,11 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="2364" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="2611" max="32767" attributes="0"/>
                       <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="personalInfoJPanel1" pref="2352" max="32767" attributes="0"/>
+                              <Component id="personalInfoJPanel1" pref="2599" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -124,12 +121,12 @@
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="1639" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="4177" max="32767" attributes="0"/>
                       <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="personalInfoJPanel1" min="-2" pref="1115" max="-2" attributes="0"/>
-                              <EmptySpace pref="518" max="32767" attributes="0"/>
+                              <EmptySpace pref="3056" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -155,7 +152,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="familyBackgroundPanel1" min="-2" pref="1110" max="-2" attributes="0"/>
-                          <EmptySpace pref="1248" max="32767" attributes="0"/>
+                          <EmptySpace pref="1495" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -164,7 +161,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="familyBackgroundPanel1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="1166" max="32767" attributes="0"/>
+                          <EmptySpace pref="3088" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -189,7 +186,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="educationPanel1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="452" max="32767" attributes="0"/>
+                          <EmptySpace pref="699" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -198,13 +195,47 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="educationPanel1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="550" max="32767" attributes="0"/>
+                          <EmptySpace pref="3088" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
                 <Component class="view.EducationPanel" name="educationPanel1">
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="jPanel4">
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                  <JTabbedPaneConstraints tabName="Eligibility">
+                    <Property name="tabTitle" type="java.lang.String" value="Eligibility"/>
+                  </JTabbedPaneConstraints>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="eligibilityPanel1" min="-2" pref="1169" max="-2" attributes="0"/>
+                          <EmptySpace pref="1436" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="eligibilityPanel1" min="-2" pref="800" max="-2" attributes="0"/>
+                          <EmptySpace pref="3371" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="view.EligibilityPanel" name="eligibilityPanel1">
                 </Component>
               </SubComponents>
             </Container>

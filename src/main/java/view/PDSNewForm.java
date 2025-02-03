@@ -44,9 +44,10 @@ public class PDSNewForm extends javax.swing.JFrame {
         familyBackgroundPanel1 = new view.FamilyBackgroundPanel();
         jPanel3 = new javax.swing.JPanel();
         educationPanel1 = new view.EducationPanel();
+        jPanel4 = new javax.swing.JPanel();
+        eligibilityPanel1 = new view.EligibilityPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1127, 895));
 
         headerPanel.setBackground(new java.awt.Color(1, 27, 247));
         headerPanel.setPreferredSize(new java.awt.Dimension(100, 100));
@@ -62,7 +63,7 @@ public class PDSNewForm extends javax.swing.JFrame {
             .addGroup(headerPanelLayout.createSequentialGroup()
                 .addGap(110, 110, 110)
                 .addComponent(jLabel1)
-                .addContainerGap(792, Short.MAX_VALUE))
+                .addContainerGap(851, Short.MAX_VALUE))
         );
         headerPanelLayout.setVerticalGroup(
             headerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -79,21 +80,21 @@ public class PDSNewForm extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 2364, Short.MAX_VALUE)
+            .addGap(0, 2611, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addContainerGap()
-                    .addComponent(personalInfoJPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 2352, Short.MAX_VALUE)
+                    .addComponent(personalInfoJPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 2599, Short.MAX_VALUE)
                     .addContainerGap()))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1639, Short.MAX_VALUE)
+            .addGap(0, 4177, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addContainerGap()
                     .addComponent(personalInfoJPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(518, Short.MAX_VALUE)))
+                    .addContainerGap(3056, Short.MAX_VALUE)))
         );
 
         jTabbedPane1.addTab("Personal Info", jPanel1);
@@ -105,14 +106,14 @@ public class PDSNewForm extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(familyBackgroundPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(1248, Short.MAX_VALUE))
+                .addContainerGap(1495, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(familyBackgroundPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(1166, Short.MAX_VALUE))
+                .addContainerGap(3088, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Family Background", jPanel2);
@@ -124,17 +125,36 @@ public class PDSNewForm extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(educationPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(452, Short.MAX_VALUE))
+                .addContainerGap(699, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(educationPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(550, Short.MAX_VALUE))
+                .addContainerGap(3088, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Education", jPanel3);
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(eligibilityPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(1436, Short.MAX_VALUE))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(eligibilityPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 800, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(3371, Short.MAX_VALUE))
+        );
+
+        jTabbedPane1.addTab("Eligibility", jPanel4);
 
         jScrollPane1.setViewportView(jTabbedPane1);
 
@@ -142,7 +162,7 @@ public class PDSNewForm extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(headerPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 1127, Short.MAX_VALUE)
+            .addComponent(headerPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 1186, Short.MAX_VALUE)
             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
@@ -150,7 +170,7 @@ public class PDSNewForm extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(headerPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 825, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 736, Short.MAX_VALUE)
                 .addGap(12, 12, 12))
         );
 
@@ -194,12 +214,14 @@ public class PDSNewForm extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private view.EducationPanel educationPanel1;
+    private view.EligibilityPanel eligibilityPanel1;
     private view.FamilyBackgroundPanel familyBackgroundPanel1;
     private javax.swing.JPanel headerPanel;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private view.PersonalInfoJPanel personalInfoJPanel1;

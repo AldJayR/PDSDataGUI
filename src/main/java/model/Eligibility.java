@@ -1,13 +1,15 @@
 package model;
 
+import java.time.LocalDate;
+
 public class Eligibility {
 
     private String careerService;
     private String rating;
-    private String dateOfExamination;
+    private LocalDate dateOfExamination; 
     private String placeOfExamination;
     private String licenseNumber;
-    private String licenseDateOfValidity;
+    private LocalDate licenseDateOfValidity;
 
     // Constructor
     public Eligibility() {
@@ -30,11 +32,11 @@ public class Eligibility {
         this.rating = rating;
     }
 
-    public String getDateOfExamination() {
+    public LocalDate getDateOfExamination() {
         return dateOfExamination;
     }
 
-    public void setDateOfExamination(String dateOfExamination) {
+    public void setDateOfExamination(LocalDate dateOfExamination) {
         this.dateOfExamination = dateOfExamination;
     }
 
@@ -54,11 +56,11 @@ public class Eligibility {
         this.licenseNumber = licenseNumber;
     }
 
-    public String getLicenseDateOfValidity() {
+    public LocalDate getLicenseDateOfValidity() {
         return licenseDateOfValidity;
     }
 
-    public void setLicenseDateOfValidity(String licenseDateOfValidity) {
+    public void setLicenseDateOfValidity(LocalDate licenseDateOfValidity) {
         this.licenseDateOfValidity = licenseDateOfValidity;
     }
 }
