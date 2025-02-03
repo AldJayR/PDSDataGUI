@@ -74,12 +74,16 @@ public class PDSData {
     // V. Work Experience
     private List<WorkExperience> workExperienceList;
 
+    // VI. Voluntary Work
+    private List<VoluntaryWork> voluntaryWorkList;
+
     // Constructor
     public PDSData() {
         educationList = new ArrayList<>();
         children = new ArrayList<>();
         eligibilityList = new ArrayList<>();
         workExperienceList = new ArrayList<>();
+        voluntaryWorkList = new ArrayList<>();
     }
 
     public String getSurname() {
