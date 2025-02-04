@@ -1,7 +1,10 @@
 
 package view;
 
+import java.awt.Point;
+import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
+import javax.swing.JViewport;
 
 public class SummaryPanel extends javax.swing.JPanel {
 
@@ -15,6 +18,15 @@ public class SummaryPanel extends javax.swing.JPanel {
     public JTextArea getSummaryTextArea() { 
         return summaryTextArea;
     }
+    
+    public JScrollPane getSummaryScrollPane() {
+        return summaryScrollPane;
+    }
+    
+    public void scrollToTop() {
+        JViewport summaryViewport = summaryScrollPane.getViewport();
+        summaryViewport.setViewPosition(new Point(0, 0));
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -27,7 +39,7 @@ public class SummaryPanel extends javax.swing.JPanel {
 
         jLabel1 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
-        jScrollPane1 = new javax.swing.JScrollPane();
+        summaryScrollPane = new javax.swing.JScrollPane();
         summaryTextArea = new javax.swing.JTextArea();
 
         setBackground(new java.awt.Color(243, 244, 246));
@@ -42,7 +54,7 @@ public class SummaryPanel extends javax.swing.JPanel {
         summaryTextArea.setLineWrap(true);
         summaryTextArea.setRows(5);
         summaryTextArea.setWrapStyleWord(true);
-        jScrollPane1.setViewportView(summaryTextArea);
+        summaryScrollPane.setViewportView(summaryTextArea);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -57,7 +69,7 @@ public class SummaryPanel extends javax.swing.JPanel {
                             .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 1184, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(134, 134, 134)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 739, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(summaryScrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, 739, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(41, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -68,7 +80,7 @@ public class SummaryPanel extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(37, 37, 37)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 537, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(summaryScrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, 537, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(117, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -76,8 +88,8 @@ public class SummaryPanel extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JScrollPane summaryScrollPane;
     private javax.swing.JTextArea summaryTextArea;
     // End of variables declaration//GEN-END:variables
 }

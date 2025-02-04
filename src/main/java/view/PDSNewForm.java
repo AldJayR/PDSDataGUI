@@ -9,6 +9,7 @@ import java.awt.Color;
 import java.awt.Component;
 import java.awt.Point;
 import javax.swing.JButton;
+import javax.swing.JScrollPane;
 import javax.swing.JViewport;
 
 public class PDSNewForm extends javax.swing.JFrame {
@@ -80,6 +81,8 @@ public class PDSNewForm extends javax.swing.JFrame {
     public void scrollToTop() {
         JViewport viewport = scrollPane.getViewport();
         viewport.setViewPosition(new Point(0, 0));
+        
+        summaryPanel.scrollToTop();
     }
     
     
