@@ -5,6 +5,10 @@
 package view;
 
 import java.time.LocalDate;
+import java.time.ZoneId;
+import java.util.Date;
+import java.text.SimpleDateFormat;
+import java.text.ParseException;
 import javax.swing.JOptionPane;
 import model.CivilStatus;
 import model.Sex;
@@ -17,8 +21,8 @@ public class PersonalInfoJPanel extends javax.swing.JPanel {
     public PersonalInfoJPanel() {
         initComponents();
     }
-    
-        public String getSurname() {
+
+    public String getSurname() {
         return surnameTextField.getText();
     }
 
@@ -35,7 +39,14 @@ public class PersonalInfoJPanel extends javax.swing.JPanel {
     }
 
     public LocalDate getDateOfBirth() {
-        return (LocalDate) dateOfBirthTextField.getValue();
+        try {
+            SimpleDateFormat dateFormat = new SimpleDateFormat("M/d/yyyy");
+            Date date = dateFormat.parse(dateOfBirthTextField.getText());
+            return date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+        } catch (ParseException e) {
+            JOptionPane.showMessageDialog(this, "Invalid date format. Please use MM/dd/yyyy.", "Error", JOptionPane.ERROR_MESSAGE);
+            return null;
+        }
     }
 
     public String getPlaceOfBirth() {

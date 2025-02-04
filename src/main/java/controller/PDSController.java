@@ -26,7 +26,7 @@ public class PDSController {
     }
 
     public void handleSubmit() {
-        // 1. Retrieve data from all panels and update the model
+        // Retrieve data from all panels and update the model
         updateModelFromPersonalInfoPanel();
         updateModelFromFamilyBackgroundPanel();
         updateModelFromEducationPanel();
@@ -36,20 +36,17 @@ public class PDSController {
         updateModelFromTrainingPanel();
         updateModelFromOtherInfoPanel();
 
-        // 2. Validate data
         if (!validateData()) {
-            return; // Don't proceed if validation fails
+            return; 
         }
-
-        // 3. Format the summary
         String summary = formatSummary();
 
-        // 4. Display the summary
         view.displaySummary(summary);
 
-        // 5. Switch to the Summary tab
+       // Switch to the Summary tab
         int summaryTabIndex = view.getSummaryTabIndex();
         view.switchToTab(summaryTabIndex);
+        view.scrollToTop();
     }
 
     private void updateModelFromPersonalInfoPanel() {
@@ -62,7 +59,7 @@ public class PDSController {
         model.setPlaceOfBirth(view.getPersonalInfoPanel().getPlaceOfBirth());
         model.setSex(view.getPersonalInfoPanel().getSex());
         model.setCivilStatus(view.getPersonalInfoPanel().getCivilStatus());
-        model.setHeight(view.getPersonalInfoPanel().getHeight());
+        model.setHeight(view.getPersonalInfoPanel().getHeightInput());
         model.setWeight(view.getPersonalInfoPanel().getWeight());
         model.setBloodType(view.getPersonalInfoPanel().getBloodType());
         model.setGsisIdNo(view.getPersonalInfoPanel().getGsisIdNo());

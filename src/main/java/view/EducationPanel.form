@@ -213,9 +213,9 @@
                                           <Component id="middleNameLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
                                           <Group type="102" alignment="0" attributes="0">
                                               <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                                              <Component id="googleAttendFromTextField" min="-2" pref="55" max="-2" attributes="0"/>
+                                              <Component id="graduateAttendFromTextField" min="-2" pref="55" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="googleAttendToTextField" min="-2" pref="54" max="-2" attributes="0"/>
+                                              <Component id="graduateAttendToTextField" min="-2" pref="54" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                   </Group>
@@ -224,7 +224,7 @@
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
-                                      <Component id="collegeHighestTextField1" max="32767" attributes="0"/>
+                                      <Component id="graduateHighestTextField" max="32767" attributes="0"/>
                                   </Group>
                                   <Component id="firstNameLabel18" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
@@ -359,7 +359,6 @@
               <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="jSeparator2" min="-2" pref="23" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
@@ -407,7 +406,6 @@
               <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jSeparator3" min="-2" pref="10" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
@@ -455,7 +453,6 @@
               <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jSeparator4" min="-2" pref="10" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
@@ -503,7 +500,6 @@
               <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jSeparator5" min="-2" pref="10" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
@@ -520,7 +516,7 @@
                                   <Component id="firstNameLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="collegeHighestTextField1" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="graduateHighestTextField" min="-2" pref="30" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -541,8 +537,8 @@
                           <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="graduateCourseTextField" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                              <Component id="googleAttendFromTextField" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                              <Component id="googleAttendToTextField" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="graduateAttendFromTextField" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="graduateAttendToTextField" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -1179,16 +1175,16 @@
     </Component>
     <Component class="javax.swing.JSeparator" name="jSeparator5">
     </Component>
-    <Component class="javax.swing.JTextField" name="collegeHighestTextField1">
+    <Component class="javax.swing.JTextField" name="graduateHighestTextField">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="fa" green="fa" red="fa" type="rgb"/>
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="collegeHighestTextField1FocusGained"/>
-        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="collegeHighestTextField1FocusLost"/>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="collegeHighestTextField1ActionPerformed"/>
+        <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="graduateHighestTextFieldFocusGained"/>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="graduateHighestTextFieldFocusLost"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="graduateHighestTextFieldActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="graduateCourseTextField">
@@ -1219,16 +1215,16 @@
         <Property name="text" type="java.lang.String" value="Period of Attendance"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="googleAttendFromTextField">
+    <Component class="javax.swing.JTextField" name="graduateAttendFromTextField">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="fa" green="fa" red="fa" type="rgb"/>
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="googleAttendFromTextFieldFocusGained"/>
-        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="googleAttendFromTextFieldFocusLost"/>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="googleAttendFromTextFieldActionPerformed"/>
+        <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="graduateAttendFromTextFieldFocusGained"/>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="graduateAttendFromTextFieldFocusLost"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="graduateAttendFromTextFieldActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="graduateScholarshipTextField">
@@ -1243,16 +1239,16 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="graduateScholarshipTextFieldActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="googleAttendToTextField">
+    <Component class="javax.swing.JTextField" name="graduateAttendToTextField">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="fa" green="fa" red="fa" type="rgb"/>
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="googleAttendToTextFieldFocusGained"/>
-        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="googleAttendToTextFieldFocusLost"/>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="googleAttendToTextFieldActionPerformed"/>
+        <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="graduateAttendToTextFieldFocusGained"/>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="graduateAttendToTextFieldFocusLost"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="graduateAttendToTextFieldActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="firstNameLabel17">

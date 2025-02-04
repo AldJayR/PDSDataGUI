@@ -30,6 +30,4 @@ public class Reference {
         this.telephoneNo = telephoneNo;
     }
 
-    
-    
 }

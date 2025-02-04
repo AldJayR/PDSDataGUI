@@ -5,9 +5,9 @@
 package view;
 
 import model.Education;
-import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeParseException;
+import java.time.DateTimeException;
+import java.time.Year;
 import javax.swing.JOptionPane;
 
 public class EducationPanel extends javax.swing.JPanel {
@@ -29,12 +29,12 @@ public class EducationPanel extends javax.swing.JPanel {
         return elementaryCourseTextField.getText();
     }
 
-    public LocalDate getElementaryAttendFrom() {
-        return parseDate(elementaryAttendFromTextField.getText(), "Elementary Attend From");
+    public Year getElementaryAttendFrom() {
+        return parseYear(elementaryAttendFromTextField.getText(), "Elementary Attend From");
     }
 
-    public LocalDate getElementaryAttendTo() {
-        return parseDate(elementaryAttendToTextField.getText(), "Elementary Attend To");
+    public Year getElementaryAttendTo() {
+        return parseYear(elementaryAttendToTextField.getText(), "Elementary Attend To");
     }
 
     public String getElementaryHighestLevel() {
@@ -58,12 +58,12 @@ public class EducationPanel extends javax.swing.JPanel {
         return secondaryCourseTextField.getText();
     }
 
-    public LocalDate getSecondaryAttendFrom() {
-        return parseDate(secondaryAttendFromTextField.getText(), "Secondary Attend From");
+    public Year getSecondaryAttendFrom() {
+        return parseYear(secondaryAttendFromTextField.getText(), "Secondary Attend From");
     }
 
-    public LocalDate getSecondaryAttendTo() {
-        return parseDate(secondaryAttendToTextField.getText(), "Secondary Attend To");
+    public Year getSecondaryAttendTo() {
+        return parseYear(secondaryAttendToTextField.getText(), "Secondary Attend To");
     }
 
     public String getSecondaryHighestLevel() {
@@ -87,12 +87,12 @@ public class EducationPanel extends javax.swing.JPanel {
         return vocationalCourseTextField.getText();
     }
 
-    public LocalDate getVocationalAttendFrom() {
-        return parseDate(vocationalAttendFromTextField.getText(), "Vocational Attend From");
+    public Year getVocationalAttendFrom() {
+        return parseYear(vocationalAttendFromTextField.getText(), "Vocational Attend From");
     }
 
-    public LocalDate getVocationalAttendTo() {
-        return parseDate(vocationalAttendToTextField.getText(), "Vocational Attend To");
+    public Year getVocationalAttendTo() {
+        return parseYear(vocationalAttendToTextField.getText(), "Vocational Attend To");
     }
 
     public String getVocationalHighestLevel() {
@@ -116,12 +116,12 @@ public class EducationPanel extends javax.swing.JPanel {
         return collegeCourseTextField.getText();
     }
 
-    public LocalDate getCollegeAttendFrom() {
-        return parseDate(collegeAttendFromTextField.getText(), "College Attend From");
+    public Year getCollegeAttendFrom() {
+        return parseYear(collegeAttendFromTextField.getText(), "College Attend From");
     }
 
-    public LocalDate getCollegeAttendTo() {
-        return parseDate(collegeAttendToTextField.getText(), "College Attend To");
+    public Year getCollegeAttendTo() {
+        return parseYear(collegeAttendToTextField.getText(), "College Attend To");
     }
 
     public String getCollegeHighestLevel() {
@@ -145,16 +145,16 @@ public class EducationPanel extends javax.swing.JPanel {
         return graduateCourseTextField.getText();
     }
 
-    public LocalDate getGraduateAttendFrom() {
-        return parseDate(googleAttendFromTextField.getText(), "Graduate Studies Attend From");
+    public Year getGraduateAttendFrom() {
+        return parseYear(graduateAttendFromTextField.getText(), "Graduate Studies Attend From");
     }
 
-    public LocalDate getGraduateAttendTo() {
-        return parseDate(googleAttendToTextField.getText(), "Graduate Studies Attend To");
+    public Year getGraduateAttendTo() {
+        return parseYear(graduateAttendToTextField.getText(), "Graduate Studies Attend To");
     }
 
     public String getGraduateHighestLevel() {
-        return collegeHighestTextField1.getText();
+        return graduateHighestTextField.getText();
     }
 
     public String getGraduateYearGraduated() {
@@ -165,11 +165,13 @@ public class EducationPanel extends javax.swing.JPanel {
         return graduateScholarshipTextField.getText();
     }
 
-    private LocalDate parseDate(String dateString, String fieldName) {
+    private Year parseYear(String yearString, String fieldName) {
         try {
-            return LocalDate.parse(dateString, dateFormatter);
-        } catch (DateTimeParseException ex) {
-            JOptionPane.showMessageDialog(this, "Invalid date format for " + fieldName + ". Please use MM/dd/yyyy.", "Error", JOptionPane.ERROR_MESSAGE);
+            return Year.parse(yearString);
+        } catch (DateTimeException ex) {
+            JOptionPane.showMessageDialog(this,
+                    "Invalid year format for " + fieldName + ". Use YYYY.",
+                    "Error", JOptionPane.ERROR_MESSAGE);
             return null;
         }
     }
@@ -214,9 +216,9 @@ public class EducationPanel extends javax.swing.JPanel {
         // Clear Graduate Studies fields
         graduateSchoolTextField.setText("");
         graduateCourseTextField.setText("");
-        googleAttendFromTextField.setText("");
-        googleAttendToTextField.setText("");
-        collegeHighestTextField1.setText("");
+        graduateAttendFromTextField.setText("");
+        graduateAttendToTextField.setText("");
+        graduateHighestTextField.setText("");
         graduateYearGraduatedTextField1.setText("");
         graduateScholarshipTextField.setText("");
     }
@@ -301,13 +303,13 @@ public class EducationPanel extends javax.swing.JPanel {
         firstNameLabel15 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jSeparator5 = new javax.swing.JSeparator();
-        collegeHighestTextField1 = new javax.swing.JTextField();
+        graduateHighestTextField = new javax.swing.JTextField();
         graduateCourseTextField = new javax.swing.JTextField();
         firstNameLabel16 = new javax.swing.JLabel();
         middleNameLabel4 = new javax.swing.JLabel();
-        googleAttendFromTextField = new javax.swing.JTextField();
+        graduateAttendFromTextField = new javax.swing.JTextField();
         graduateScholarshipTextField = new javax.swing.JTextField();
-        googleAttendToTextField = new javax.swing.JTextField();
+        graduateAttendToTextField = new javax.swing.JTextField();
         firstNameLabel17 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
@@ -845,18 +847,18 @@ public class EducationPanel extends javax.swing.JPanel {
         jLabel14.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
         jLabel14.setText("Graduate Studies");
 
-        collegeHighestTextField1.setBackground(new java.awt.Color(250, 250, 250));
-        collegeHighestTextField1.addFocusListener(new java.awt.event.FocusAdapter() {
+        graduateHighestTextField.setBackground(new java.awt.Color(250, 250, 250));
+        graduateHighestTextField.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                collegeHighestTextField1FocusGained(evt);
+                graduateHighestTextFieldFocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                collegeHighestTextField1FocusLost(evt);
+                graduateHighestTextFieldFocusLost(evt);
             }
         });
-        collegeHighestTextField1.addActionListener(new java.awt.event.ActionListener() {
+        graduateHighestTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                collegeHighestTextField1ActionPerformed(evt);
+                graduateHighestTextFieldActionPerformed(evt);
             }
         });
 
@@ -881,18 +883,18 @@ public class EducationPanel extends javax.swing.JPanel {
         middleNameLabel4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         middleNameLabel4.setText("Period of Attendance");
 
-        googleAttendFromTextField.setBackground(new java.awt.Color(250, 250, 250));
-        googleAttendFromTextField.addFocusListener(new java.awt.event.FocusAdapter() {
+        graduateAttendFromTextField.setBackground(new java.awt.Color(250, 250, 250));
+        graduateAttendFromTextField.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                googleAttendFromTextFieldFocusGained(evt);
+                graduateAttendFromTextFieldFocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                googleAttendFromTextFieldFocusLost(evt);
+                graduateAttendFromTextFieldFocusLost(evt);
             }
         });
-        googleAttendFromTextField.addActionListener(new java.awt.event.ActionListener() {
+        graduateAttendFromTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                googleAttendFromTextFieldActionPerformed(evt);
+                graduateAttendFromTextFieldActionPerformed(evt);
             }
         });
 
@@ -911,18 +913,18 @@ public class EducationPanel extends javax.swing.JPanel {
             }
         });
 
-        googleAttendToTextField.setBackground(new java.awt.Color(250, 250, 250));
-        googleAttendToTextField.addFocusListener(new java.awt.event.FocusAdapter() {
+        graduateAttendToTextField.setBackground(new java.awt.Color(250, 250, 250));
+        graduateAttendToTextField.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                googleAttendToTextFieldFocusGained(evt);
+                graduateAttendToTextFieldFocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                googleAttendToTextFieldFocusLost(evt);
+                graduateAttendToTextFieldFocusLost(evt);
             }
         });
-        googleAttendToTextField.addActionListener(new java.awt.event.ActionListener() {
+        graduateAttendToTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                googleAttendToTextFieldActionPerformed(evt);
+                graduateAttendToTextFieldActionPerformed(evt);
             }
         });
 
@@ -1125,14 +1127,14 @@ public class EducationPanel extends javax.swing.JPanel {
                                             .addComponent(middleNameLabel4)
                                             .addGroup(layout.createSequentialGroup()
                                                 .addGap(9, 9, 9)
-                                                .addComponent(googleAttendFromTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(graduateAttendFromTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(googleAttendToTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                                .addComponent(graduateAttendToTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(2, 2, 2)
-                                        .addComponent(collegeHighestTextField1))
+                                        .addComponent(graduateHighestTextField))
                                     .addComponent(firstNameLabel18))
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1233,7 +1235,6 @@ public class EducationPanel extends javax.swing.JPanel {
                 .addComponent(jLabel5)
                 .addGap(18, 18, 18)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(17, 17, 17)
@@ -1270,7 +1271,6 @@ public class EducationPanel extends javax.swing.JPanel {
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(23, 23, 23)
@@ -1307,7 +1307,6 @@ public class EducationPanel extends javax.swing.JPanel {
                 .addComponent(jLabel11)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(23, 23, 23)
@@ -1344,7 +1343,6 @@ public class EducationPanel extends javax.swing.JPanel {
                 .addComponent(jLabel14)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(23, 23, 23)
@@ -1359,7 +1357,7 @@ public class EducationPanel extends javax.swing.JPanel {
                                     .addComponent(firstNameLabel18)
                                     .addComponent(firstNameLabel16))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(collegeHighestTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(graduateHighestTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addGroup(layout.createSequentialGroup()
                             .addComponent(surnameLabel4)
@@ -1375,8 +1373,8 @@ public class EducationPanel extends javax.swing.JPanel {
                             .addGap(6, 6, 6)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(graduateCourseTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(googleAttendFromTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(googleAttendToTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(graduateAttendFromTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(graduateAttendToTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(233, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -1717,17 +1715,17 @@ public class EducationPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_collegeSchoolTextFieldActionPerformed
 
-    private void collegeHighestTextField1FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_collegeHighestTextField1FocusGained
+    private void graduateHighestTextFieldFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_graduateHighestTextFieldFocusGained
         // TODO add your handling code here:
-    }//GEN-LAST:event_collegeHighestTextField1FocusGained
+    }//GEN-LAST:event_graduateHighestTextFieldFocusGained
 
-    private void collegeHighestTextField1FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_collegeHighestTextField1FocusLost
+    private void graduateHighestTextFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_graduateHighestTextFieldFocusLost
         // TODO add your handling code here:
-    }//GEN-LAST:event_collegeHighestTextField1FocusLost
+    }//GEN-LAST:event_graduateHighestTextFieldFocusLost
 
-    private void collegeHighestTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_collegeHighestTextField1ActionPerformed
+    private void graduateHighestTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_graduateHighestTextFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_collegeHighestTextField1ActionPerformed
+    }//GEN-LAST:event_graduateHighestTextFieldActionPerformed
 
     private void graduateCourseTextFieldFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_graduateCourseTextFieldFocusGained
         // TODO add your handling code here:
@@ -1741,17 +1739,17 @@ public class EducationPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_graduateCourseTextFieldActionPerformed
 
-    private void googleAttendFromTextFieldFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_googleAttendFromTextFieldFocusGained
+    private void graduateAttendFromTextFieldFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_graduateAttendFromTextFieldFocusGained
         // TODO add your handling code here:
-    }//GEN-LAST:event_googleAttendFromTextFieldFocusGained
+    }//GEN-LAST:event_graduateAttendFromTextFieldFocusGained
 
-    private void googleAttendFromTextFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_googleAttendFromTextFieldFocusLost
+    private void graduateAttendFromTextFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_graduateAttendFromTextFieldFocusLost
         // TODO add your handling code here:
-    }//GEN-LAST:event_googleAttendFromTextFieldFocusLost
+    }//GEN-LAST:event_graduateAttendFromTextFieldFocusLost
 
-    private void googleAttendFromTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_googleAttendFromTextFieldActionPerformed
+    private void graduateAttendFromTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_graduateAttendFromTextFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_googleAttendFromTextFieldActionPerformed
+    }//GEN-LAST:event_graduateAttendFromTextFieldActionPerformed
 
     private void graduateScholarshipTextFieldFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_graduateScholarshipTextFieldFocusGained
         // TODO add your handling code here:
@@ -1765,17 +1763,17 @@ public class EducationPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_graduateScholarshipTextFieldActionPerformed
 
-    private void googleAttendToTextFieldFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_googleAttendToTextFieldFocusGained
+    private void graduateAttendToTextFieldFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_graduateAttendToTextFieldFocusGained
         // TODO add your handling code here:
-    }//GEN-LAST:event_googleAttendToTextFieldFocusGained
+    }//GEN-LAST:event_graduateAttendToTextFieldFocusGained
 
-    private void googleAttendToTextFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_googleAttendToTextFieldFocusLost
+    private void graduateAttendToTextFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_graduateAttendToTextFieldFocusLost
         // TODO add your handling code here:
-    }//GEN-LAST:event_googleAttendToTextFieldFocusLost
+    }//GEN-LAST:event_graduateAttendToTextFieldFocusLost
 
-    private void googleAttendToTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_googleAttendToTextFieldActionPerformed
+    private void graduateAttendToTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_graduateAttendToTextFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_googleAttendToTextFieldActionPerformed
+    }//GEN-LAST:event_graduateAttendToTextFieldActionPerformed
 
     private void graduateSchoolTextFieldFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_graduateSchoolTextFieldFocusGained
         // TODO add your handling code here:
@@ -1807,7 +1805,6 @@ public class EducationPanel extends javax.swing.JPanel {
     private javax.swing.JTextField collegeAttendToTextField;
     private javax.swing.JTextField collegeCourseTextField;
     private javax.swing.JTextField collegeHighestTextField;
-    private javax.swing.JTextField collegeHighestTextField1;
     private javax.swing.JTextField collegeScholarshipTextField;
     private javax.swing.JTextField collegeSchoolTextField;
     private javax.swing.JTextField collegeYearGraduatedTextField;
@@ -1838,9 +1835,10 @@ public class EducationPanel extends javax.swing.JPanel {
     private javax.swing.JLabel firstNameLabel7;
     private javax.swing.JLabel firstNameLabel8;
     private javax.swing.JLabel firstNameLabel9;
-    private javax.swing.JTextField googleAttendFromTextField;
-    private javax.swing.JTextField googleAttendToTextField;
+    private javax.swing.JTextField graduateAttendFromTextField;
+    private javax.swing.JTextField graduateAttendToTextField;
     private javax.swing.JTextField graduateCourseTextField;
+    private javax.swing.JTextField graduateHighestTextField;
     private javax.swing.JTextField graduateScholarshipTextField;
     private javax.swing.JTextField graduateSchoolTextField;
     private javax.swing.JTextField graduateYearGraduatedTextField1;

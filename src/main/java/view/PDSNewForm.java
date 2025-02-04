@@ -7,7 +7,9 @@ package view;
 import controller.PDSController;
 import java.awt.Color;
 import java.awt.Component;
+import java.awt.Point;
 import javax.swing.JButton;
+import javax.swing.JViewport;
 
 public class PDSNewForm extends javax.swing.JFrame {
 
@@ -75,6 +77,11 @@ public class PDSNewForm extends javax.swing.JFrame {
         mainTabbedPane.setSelectedIndex(tabIndex);
     }
     
+    public void scrollToTop() {
+        JViewport viewport = scrollPane.getViewport();
+        viewport.setViewPosition(new Point(0, 0));
+    }
+    
     
 
     /**
@@ -88,7 +95,7 @@ public class PDSNewForm extends javax.swing.JFrame {
 
         headerPanel = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
+        scrollPane = new javax.swing.JScrollPane();
         mainTabbedPane = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
         personalInfoJPanel = new view.PersonalInfoJPanel();
@@ -135,8 +142,8 @@ public class PDSNewForm extends javax.swing.JFrame {
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
-        jScrollPane1.setBorder(null);
-        jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        scrollPane.setBorder(null);
+        scrollPane.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -311,21 +318,21 @@ public class PDSNewForm extends javax.swing.JFrame {
 
         mainTabbedPane.addTab("Summary", jPanel9);
 
-        jScrollPane1.setViewportView(mainTabbedPane);
+        scrollPane.setViewportView(mainTabbedPane);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(headerPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 1186, Short.MAX_VALUE)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+            .addComponent(scrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(headerPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 736, Short.MAX_VALUE)
+                .addComponent(scrollPane, javax.swing.GroupLayout.DEFAULT_SIZE, 736, Short.MAX_VALUE)
                 .addGap(12, 12, 12))
         );
 
@@ -382,10 +389,10 @@ public class PDSNewForm extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane mainTabbedPane;
     private view.OtherInfoPanel otherInfoPanel;
     private view.PersonalInfoJPanel personalInfoJPanel;
+    private javax.swing.JScrollPane scrollPane;
     private view.SummaryPanel summaryPanel;
     private view.TrainingPanel trainingPanel;
     private view.VoluntaryWorkPanel voluntaryWorkPanel;

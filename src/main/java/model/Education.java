@@ -1,14 +1,14 @@
 package model;
 
-import java.time.LocalDate;
+import java.time.Year;
 
 public class Education {
 
     private String level;
     private String schoolName;
     private String degreeCourse;
-    private LocalDate yearFrom;
-    private LocalDate yearTo;
+    private Year yearFrom;
+    private Year yearTo;
     private String highestLevelUnitsEarned;
     private String yearGraduated;
     private String academicHonorsReceived;
@@ -37,19 +37,19 @@ public class Education {
         this.degreeCourse = degreeCourse;
     }
 
-    public LocalDate getYearFrom() {
+    public Year getYearFrom() {
         return yearFrom;
     }
 
-    public void setYearFrom(LocalDate yearFrom) {
+    public void setYearFrom(Year yearFrom) {
         this.yearFrom = yearFrom;
     }
 
-    public LocalDate getYearTo() {
+    public Year getYearTo() {
         return yearTo;
     }
 
-    public void setYearTo(LocalDate yearTo) {
+    public void setYearTo(Year yearTo) {
         this.yearTo = yearTo;
     }
 
@@ -76,6 +76,5 @@ public class Education {
     public void setAcademicHonorsReceived(String academicHonorsReceived) {
         this.academicHonorsReceived = academicHonorsReceived;
     }
-    
-    
+
 }

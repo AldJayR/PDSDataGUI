@@ -24,7 +24,7 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Component id="headerPanel" pref="1186" max="32767" attributes="0"/>
-          <Component id="jScrollPane1" alignment="0" pref="0" max="32767" attributes="0"/>
+          <Component id="scrollPane" alignment="0" pref="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -32,7 +32,7 @@
           <Group type="102" attributes="0">
               <Component id="headerPanel" min="-2" pref="52" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jScrollPane1" pref="736" max="32767" attributes="0"/>
+              <Component id="scrollPane" pref="736" max="32767" attributes="0"/>
               <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -83,7 +83,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+    <Container class="javax.swing.JScrollPane" name="scrollPane">
       <Properties>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="null"/>
